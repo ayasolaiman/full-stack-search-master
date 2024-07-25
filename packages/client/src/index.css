@@ -33,6 +33,7 @@ body {
 
 .form {
   position: relative;
+  margin-top: -135px;
 }
 
 .form .fa-search {
