@@ -37,7 +37,7 @@ app.post("/accomodations", async (req, res) => {
   const mongoClient = new MongoClient(DATABASE_URL);
   console.log("Connecting to MongoDB...");
 
-  const query = req?.body?.query;
+  const { query } = req?.body;
   console.log('Search Query:', query);
   try {
     await mongoClient.connect();
