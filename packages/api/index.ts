@@ -55,6 +55,7 @@ app.post("/accomodations", async (req, res) => {
         { chain_name: new RegExp(query, "i") },
         { hotel_name: new RegExp(query, "i") },
         { country: new RegExp(query, "i") },
+        { city: new RegExp(query, "i") },
       ],
     }).toArray();
 
