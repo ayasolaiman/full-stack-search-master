@@ -46,10 +46,10 @@ const fetchAccomodations = async (query: string) => {
 function App() {
 
   // set the required local states to render the search result
+  const [showClearBtn, setShowClearBtn] = useState(false);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [accommodations, setAccomodations] = useState<Accomodation | null>();
   
-  const [showClearBtn, setShowClearBtn] = useState(false);
 
   const fetchData = async (event: ChangeEvent<HTMLInputElement>) => {
     if (event.target.value === "") {
